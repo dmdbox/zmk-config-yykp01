@@ -1,0 +1,6 @@
+if SHIELD_YYKP01
+
+config ZMK_KEYBOARD_NAME
+    default "Ying Yang (L)"
+
+endif

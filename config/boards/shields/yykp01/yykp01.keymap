@@ -1,0 +1,49 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 0
+                &kp TAB    &kp Q        &kp W       &kp E       &kp R
+                &kp LSHFT  &kp A        &kp S       &kp D       &kp F
+                &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
+                &kp LALT   &kp ENTER    &kp SPACE   &tog 1      &bt BT_CLR
+            >;
+        };
+
+        first_layer {
+            bindings = <
+                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 1
+                &kp TAB    &kp Q        &kp W       &kp E       &kp R
+                &kp LSHFT  &kp A        &kp S       &kp D       &kp F
+                &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
+                &kp LALT   &kp ENTER    &kp SPACE   &tog 2      &bootloader
+            >;
+        };
+
+        second_layer {
+            bindings = <
+                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 2
+                &kp TAB    &kp Q        &kp W       &kp E       &kp R
+                &kp LSHFT  &kp A        &kp S       &kp D       &kp F
+                &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
+                &kp LALT   &kp ENTER    &kp SPACE   &tog 0      &bootloader            
+            >;
+        };
+
+    };
+
+    macros {
+        layer_name_macro: layer_name_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>; // Must be 1
+            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+        };
+    };
+
+};
