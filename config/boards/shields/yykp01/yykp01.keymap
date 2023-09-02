@@ -9,6 +9,7 @@
 / {
     macros {
         layer_name_macro: layer_name_macro {
+            label = "LAYER_NAME_MACRO";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>; // Must be 1
             bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
