@@ -80,7 +80,17 @@
                 &kp LCTRL  &kp Z         &kp T        &kp X        &kp X
                 &kp LCTRL  &kp LSHFT     &kp SPACE    &none        &switch_layer 4 N4
             >;
-        };        
+        };
+
+        slashkeep_layer {
+            bindings = <
+                &kp ESC    &kp N1        &none        &none        &kp TAB
+                &kp N1     &none         &kp W        &kp LCTRL    &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
+                &kp SPACE  &kp LSHFT     &kp SPACE    &none        &switch_layer 5 N5
+            >;
+        };
 
     };
     
