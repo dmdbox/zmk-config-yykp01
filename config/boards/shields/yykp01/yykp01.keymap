@@ -70,6 +70,16 @@
                 &kp D      &none         &none        &kp E        &kp E
                 &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 3 N3
             >;
+        };
+
+        cbp_layer {
+            bindings = <
+                &kp ESC    &kp C         &kp S        &kp C        &kp I
+                &kp N1     &kp Q         &kp W        &kp N3       &kp R
+                &kp TAB    &kp A         &kp S        &kp D        &kp F
+                &kp LCTRL  &kp Z         &kp T        &kp X        &kp X
+                &kp LCTRL  &kp LSHFT     &kp SPACE    &none        &switch_layer 4 N4
+            >;
         };        
 
     };
