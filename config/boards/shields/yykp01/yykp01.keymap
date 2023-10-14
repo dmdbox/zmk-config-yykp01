@@ -22,9 +22,10 @@
             tap-ms = <40>;
             bindings = <
               &macro_param_1to1 &to MACRO_PLACEHOLDER
-              &kp A
-              &kp L
+              &kp LS(A)
+              &kp LS(L)
               &macro_param_2to1 &kp MACRO_PLACEHOLDER
+              &kp HASH
             >;
         };
     };
@@ -38,17 +39,17 @@
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N5      &to 1
+                &kp LALT   &kp ENTER    &kp SPACE   &bt BT_CLR  &to 1
             >;
         };
 
         first_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp B       &switch_layer 2 N2
+                &kp ESC    &bt BT_SEL 0 &kp N2      &kp B       &switch_layer 2 N2
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N7      &to 2
+                &kp LALT   &kp ENTER    &kp SPACE   &bt BT_CLR  &to 2
             >;
         };
 
@@ -58,7 +59,7 @@
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N9      &to 0            
+                &kp LALT   &kp ENTER    &kp SPACE   &bt BT_CLR  &to 0            
             >;
         };
 
