@@ -92,6 +92,16 @@
             >;
         };
 
+        d4_layer {
+            bindings = <
+                &kp ESC    &kp E         &kp Z        &kp A        &kp I
+                &kp Q      &kp Q         &kp Q        &kp Q        &kp N4
+                &kp TAB    &kp N1        &none        &kp D        &kp Z
+                &kp LCTRL  &kp Z         &kp X        &kp N4       &kp N3
+                &kp SPACE  &kp LALT      &kp LSHFT    &none        &switch_layer 6 N6
+            >;
+        };        
+
     };
     
 };
