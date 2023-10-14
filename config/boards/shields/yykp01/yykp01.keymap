@@ -18,7 +18,7 @@
             label = "SWITCH_LAYER";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>; // Must be 1
-            bindings = <&macro_param_1to1>, <&tog MACRO_PLACEHOLDER>, <&kp A>, <&kp L>, <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            bindings = <&macro_param_1to1>, <&tog MACRO_PLACEHOLDER>;
         };
     };
 
@@ -27,7 +27,7 @@
 
         default_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 0
+                &kp ESC    &kp N1       &kp N2      &kp A       &layer_name_macro A
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
@@ -37,17 +37,17 @@
 
         first_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 1
+                &kp ESC    &kp N1       &kp N2      &kp B       &layer_name_macro B
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &tog 2      &bootloader
+                &kp LALT   &kp ENTER    &kp SPACE   &tog 2      &bt BT_CLR
             >;
         };
 
         second_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp N3      &layer_name_macro 2
+                &kp ESC    &kp N1       &kp N2      &kp C      &layer_name_macro C
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
