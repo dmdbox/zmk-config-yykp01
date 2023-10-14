@@ -60,6 +60,16 @@
                 &kp TAB    &kp F3        &kp F2       &kp F1       &kp A
                 &kp LCTRL  &kp LALT      &kp LSHFT    &none        &switch_layer 2 N2
             >;
+        };
+
+        le_layer {
+            bindings = <
+                &kp ESC    &kp T         &kp P        &kp C        &kp I
+                &le_m1     &le_m1        &le_m1       &le_m1       &kp W
+                &kp TAB    &kp Q         &none        &none        &kp W
+                &kp D      &none         &none        &kp E        &kp E
+                &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 3 N3
+            >;
         };        
 
     };
