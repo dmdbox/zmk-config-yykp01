@@ -100,7 +100,37 @@
                 &kp LCTRL  &kp Z         &kp X        &kp N4       &kp N3
                 &kp SPACE  &kp LALT      &kp LSHFT    &none        &switch_layer 6 N6
             >;
-        };        
+        };
+
+        d2r_layer {
+            bindings = <
+                &kp ESC    &kp W         &none        &kp C        &kp I
+                &kp N1     &kp N2        &none        &kp N3       &kp N4
+                &kp TAB    &kp F4        &none        &kp F2       &kp F3
+                &none      &none         &none        &kp F2       &kp F1
+                &kp LCTRL  &kp LCTRL     &kp LSHFT    &none        &switch_layer 7 N7
+            >;
+        };
+
+        stalk_layer {
+            bindings = <
+                &kp ESC    &kp N1        &kp N2       &kp N3       &kp I
+                &kp TAB    &kp Q         &kp W        &kp E        &kp R
+                &kp TAB    &kp A         &kp S        &kp D        &kp F
+                &kp Z      &kp X         &kp X        &kp C        &kp F4
+                &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 8 N8
+            >;
+        };
+
+        noita_layer {
+            bindings = <
+                &kp ESC    &none         &none        &kp C        &kp I
+                &kp N1     &kp N2        &kp W        &kp N3       &kp N4
+                &none      &kp A         &kp S        &kp D        &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
+                &kp N5     &kp LALT      &kp N5       &none        &switch_layer 0 N0
+            >;
+        };
 
     };
     
