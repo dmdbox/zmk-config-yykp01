@@ -1,12 +1,6 @@
 if SHIELD_YYKP01
 
 config ZMK_KEYBOARD_NAME
-    default "Ying Yang (L)"
-
-config BT_CTLR
-    default BT
-
-config ZMK_BLE
-    default y
+    default "YingPad"
 
 endif
