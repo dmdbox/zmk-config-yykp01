@@ -65,7 +65,7 @@
         le_layer {
             bindings = <
                 &kp ESC    &kp T         &kp P        &kp C        &kp I
-                &none      &none         &none        &none        &kp W
+                &le_m1     &le_m1        &le_m1       &le_m1       &kp W
                 &kp TAB    &kp Q         &none        &none        &kp W
                 &kp D      &none         &none        &kp E        &kp E
                 &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 3 N3
@@ -128,7 +128,17 @@
                 &kp N1     &kp N2        &kp W        &kp N3       &kp N4
                 &none      &kp A         &kp S        &kp D        &kp E
                 &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
-                &kp N5     &kp LALT      &kp N5       &none        &switch_layer 0 N0            
+                &kp N5     &kp LALT      &kp N5       &none        &switch_layer 9 N9            
+            >;
+        };
+
+        last_layer {
+            bindings = <
+                &kp ESC    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 3 &bt BT_CLR
+                &kp TAB    &kp Q         &kp W        &kp E        &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
+                &kp LCTRL  &kp Z         &kp X        &kp C        &kp V
+                &kp LALT   &kp ENTER     &kp SPACE    &bt BT_CLR   &switch_layer 0 N1
             >;
         };
 
