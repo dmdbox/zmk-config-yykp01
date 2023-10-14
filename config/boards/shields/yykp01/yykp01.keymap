@@ -11,13 +11,13 @@
         layer_name_macro: layer_name_macro {
             label = "LAYER_NAME_MACRO";
             compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>; // Must be 1
-            bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>;
+            #binding-cells = <1>; // Number of parameters
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
         switch_layer: switch_layer {
             label = "SWITCH_LAYER";
             compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>; // Must be 1
+            #binding-cells = <1>; // Number of parameters
             bindings = <&macro_param_1to1>, <&tog MACRO_PLACEHOLDER>;
         };
     };
@@ -27,31 +27,31 @@
 
         default_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp A       &to 1
+                &kp ESC    &kp N1       &kp N2      &kp A       &layer_name_macro A
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N5      &kp N6
+                &kp LALT   &kp ENTER    &kp SPACE   &kp N5      &to 1
             >;
         };
 
         first_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp B       &to 2
+                &kp ESC    &kp N1       &kp N2      &kp B       &layer_name_macro B
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N7      &kp N8
+                &kp LALT   &kp ENTER    &kp SPACE   &kp N7      &to 2
             >;
         };
 
         second_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp C       &to 0
+                &kp ESC    &kp N1       &kp N2      &kp C       &layer_name_macro C
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
-                &kp LALT   &kp ENTER    &kp SPACE   &kp N9      &kp N0            
+                &kp LALT   &kp ENTER    &kp SPACE   &kp N9      &to 0            
             >;
         };
 
