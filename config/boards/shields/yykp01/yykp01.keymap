@@ -12,7 +12,7 @@
             label = "LAYER_NAME_MACRO";
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>; // Number of parameters
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&macro_param_1to1 &kp NMACRO_PLACEHOLDER>;
         };
         switch_layer: switch_layer {
             label = "SWITCH_LAYER";
@@ -27,7 +27,7 @@
 
         default_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp A       &layer_name_macro A
+                &kp ESC    &kp N1       &kp N2      &kp A       &layer_name_macro 0
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
@@ -37,7 +37,7 @@
 
         first_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp B       &layer_name_macro B
+                &kp ESC    &kp N1       &kp N2      &kp B       &layer_name_macro 1
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
@@ -47,7 +47,7 @@
 
         second_layer {
             bindings = <
-                &kp ESC    &kp N1       &kp N2      &kp C       &layer_name_macro C
+                &kp ESC    &kp N1       &kp N2      &kp C       &layer_name_macro 2
                 &kp TAB    &kp Q        &kp W       &kp E       &kp R
                 &kp LSHFT  &kp A        &kp S       &kp D       &kp F
                 &kp LCTRL  &kp Z        &kp X       &kp C       &kp V
