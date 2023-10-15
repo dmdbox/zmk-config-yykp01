@@ -1,0 +1,13 @@
+file_format: "1"
+id: yykp01
+name: YingPad
+type: shield
+url: https://github.com/dmdbox/zmk-config-yykp01
+description: Bluetooth key pad
+requires:
+  - seeeduino_xiao_ble
+features:
+  - keys
+outputs:
+  - usb
+  - ble
