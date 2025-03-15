@@ -7,6 +7,3 @@ description: Bluetooth key pad
 requires: [seeeduino_xiao_ble]
 features:
   - keys
-outputs:
-  - usb
-  - ble
