@@ -11,7 +11,9 @@
 #   - board: nice_nano_v2
 #     shield: reviung41
 #
----
-include:
-  - board: seeeduino_xiao_ble
-    shield: yykp01
+#---
+#include:
+#  - board: seeeduino_xiao_ble
+#    shield: yykp01
+board: [seeeduino_xiao_ble]
+shield: [yykp01]
