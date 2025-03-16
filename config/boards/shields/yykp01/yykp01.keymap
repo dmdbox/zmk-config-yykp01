@@ -44,11 +44,11 @@
 
         default_layer {
             bindings = <
-                &kp ESC    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 3 &bt BT_CLR
-                &kp TAB    &kp Q         &out OUT_USB &out OUT_BLE &bootloader
-                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
-                &kp LCTRL  &kp Z         &kp X        &kp C        &sys_reset
-                &kp LALT   &kp ENTER     &kp SPACE    &bt BT_CLR   &switch_layer 1 N1
+                &bootloader &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 3 &bt BT_CLR
+                &kp N1      &kp N2        &kp N3       &kp N4       &kp N5
+                &kp N6      &kp N7        &kp N8       &kp N9       &kp N0
+                &kp ENTER   &kp ENTER     &kp ENTER    &kp ENTER    &sys_reset
+                &kp ENTER   &kp ENTER     &kp ENTER    &sys_reset   &switch_layer 1 N1
             >;
         };
 
@@ -56,9 +56,19 @@
             bindings = <
                 &kp ESC    &kp R         &kp T        &kp C        &kp I
                 &kp N1     &kp N2        &kp N3       &kp N4       &kp N5
-                &kp TAB    &kp Q         &kp E        &kp E        &kp A
-                &kp TAB    &kp F3        &kp F2       &kp F1       &kp A
+                &kp TAB    &kp Q         &kp W        &kp E        &kp R
+                &kp TAB    &kp F3        &kp F2       &kp F1       &kp T
                 &kp LCTRL  &kp LALT      &kp LSHFT    &none        &switch_layer 2 N2
+            >;
+        };
+
+        poe2_layer {
+            bindings = <
+                &kp ESC    &kp R         &kp T        &kp C        &kp I
+                &kp N1     &kp N1        &kp N1       &kp N1       &kp N2
+                &kp TAB    &kp SPACE     &kp W        &kp E        &kp W
+                &kp TAB    &none         &none        &kp T        &kp R
+                &kp Q      &kp LALT      &kp LSHFT    &none        &switch_layer 3 N3
             >;
         };
 
@@ -68,17 +78,7 @@
                 &le_m1     &le_m1        &le_m1       &le_m1       &kp W
                 &kp TAB    &kp Q         &none        &none        &kp W
                 &kp D      &none         &none        &kp E        &kp E
-                &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 3 N3
-            >;
-        };
-
-        cbp_layer {
-            bindings = <
-                &kp ESC    &kp C         &kp S        &kp C        &kp I
-                &kp N1     &kp Q         &kp W        &kp N3       &kp R
-                &kp TAB    &kp A         &kp S        &kp D        &kp F
-                &kp LCTRL  &kp Z         &kp T        &kp X        &kp X
-                &kp LCTRL  &kp LSHFT     &kp SPACE    &none        &switch_layer 4 N4
+                &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 4 N4
             >;
         };
 
@@ -112,12 +112,12 @@
             >;
         };
 
-        stl_layer {
+        stl2_layer {
             bindings = <
-                &kp ESC    &kp N1        &kp N2       &kp N3       &kp I
-                &kp TAB    &kp Q         &kp W        &kp E        &kp R
-                &kp TAB    &kp A         &kp S        &kp D        &kp F
-                &kp Z      &kp X         &kp X        &kp C        &kp F4
+                &kp ESC    &kp N2        &kp N3       &kp N4       &kp I
+                &kp M      &kp Z         &kp W        &kp C        &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
+                &kp LCTRL  &kp N7        &kp F5       &kp L        &kp N1
                 &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 8 N8
             >;
         };
