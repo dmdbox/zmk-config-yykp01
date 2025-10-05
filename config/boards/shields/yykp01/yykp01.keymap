@@ -100,38 +100,6 @@
                 &to 9
             >;  
         };
-        activate_layer10: activate_layer10 {
-            label = "ACTIVATE_LAYER10";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 10
-            >;  
-        };
-        activate_layer11: activate_layer11 {
-            label = "ACTIVATE_LAYER11";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 11
-            >;  
-        };
-        activate_layer12: activate_layer12 {
-            label = "ACTIVATE_LAYER12";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 12
-            >;  
-        };
-        activate_layer13: activate_layer13 {
-            label = "ACTIVATE_LAYER13";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 13
-            >;  
-        };
     };
 
     keymap {
@@ -147,58 +115,95 @@
             >;
         };
 
-        extra1 {
-            status = "reserved";
+        layout1 {
+            bindings = <
+                &kp ESC    &kp R         &kp T        &kp C        &kp I
+                &kp N1     &kp N2        &kp N3       &kp N4       &kp N5
+                &kp TAB    &kp Q         &kp W        &kp E        &kp R
+                &kp TAB    &kp F3        &kp F2       &kp F1       &kp T
+                &kp LCTRL  &kp LALT      &kp LSHFT    &none        &switch_layer 2 N2
+            >;
         };
 
-        extra2 {
-            status = "reserved";
+        layout2 {
+            bindings = <
+                &kp ESC    &kp R         &kp T        &kp C        &kp I
+                &kp N1     &kp N1        &kp N1       &kp N1       &kp N2
+                &kp TAB    &kp SPACE     &kp W        &kp E        &kp W
+                &kp TAB    &none         &none        &kp T        &kp R
+                &kp Q      &kp LALT      &kp LSHFT    &none        &switch_layer 3 N3
+            >;
         };
 
-        extra3 {
-            status = "reserved";
+        layout3 {
+            bindings = <
+                &kp ESC    &kp T         &kp P        &kp C        &kp I
+                &le_m1     &le_m1        &le_m1       &le_m1       &kp W
+                &kp TAB    &kp Q         &none        &none        &kp W
+                &kp D      &none         &none        &kp E        &kp E
+                &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 4 N4
+            >;
         };
 
-        extra4 {
-            status = "reserved";
+        layout4 {
+            bindings = <
+                &kp ESC    &kp N1        &none        &none        &kp TAB
+                &kp N1     &none         &kp W        &kp LCTRL    &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
+                &kp SPACE  &kp LSHFT     &kp SPACE    &none        &switch_layer 5 N5
+            >;
         };
 
-        extra5 {
-            status = "reserved";
+        layout5 {
+            bindings = <
+                &kp ESC    &kp E         &kp Z        &kp A        &kp I
+                &kp Q      &kp Q         &kp Q        &kp Q        &kp N4
+                &kp TAB    &kp N1        &none        &kp D        &kp Z
+                &kp LCTRL  &kp Z         &kp X        &kp N4       &kp N3
+                &kp SPACE  &kp LALT      &kp LSHFT    &none        &switch_layer 6 N6
+            >;
         };
 
-        extra6 {
-            status = "reserved";
+        layout6 {
+            bindings = <
+                &kp ESC    &kp W         &none        &kp C        &kp I
+                &kp N1     &kp N2        &none        &kp N3       &kp N4
+                &kp TAB    &kp F4        &none        &kp F2       &kp F3
+                &none      &none         &none        &kp F2       &kp F1
+                &kp LCTRL  &kp LCTRL     &kp LSHFT    &none        &switch_layer 7 N7
+            >;
         };
 
-        extra7 {
-            status = "reserved";
+        layout7 {
+            bindings = <
+                &kp ESC    &kp N2        &kp N3       &kp N4       &kp I
+                &kp M      &kp Z         &kp W        &kp C        &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
+                &kp LCTRL  &kp N7        &kp F5       &kp L        &kp N1
+                &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 8 N8
+            >;
         };
 
-        extra8 {
-            status = "reserved";
+        layout8 {
+            bindings = <
+                &kp ESC    &none         &none        &kp C        &kp I
+                &kp N1     &kp N2        &kp W        &kp N3       &kp N4
+                &none      &kp A         &kp S        &kp D        &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
+                &kp N5     &kp LALT      &kp N5       &none        &switch_layer 9 N9
+            >;
         };
 
-        extra9 {
-            status = "reserved";
+        layout9 {
+            bindings = <
+                &kp ESC    &kp N1        &kp N2       &kp N3       &kp N4
+                &kp TAB    &kp Q         &kp W        &kp E        &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
+                &kp LCTRL  &kp Z         &kp X        &kp C        &kp V
+                &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 0 N0
+            >;
         };
-
-        extra10 {
-            status = "reserved";
-        };
-
-        extra11 {
-            status = "reserved";
-        };
-
-        extra12 {
-            status = "reserved";
-        };
-
-        extra13 {
-            status = "reserved";
-        };
-
     };
     
 };
