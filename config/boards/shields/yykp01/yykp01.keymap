@@ -138,7 +138,7 @@
         layout3 {
             bindings = <
                 &kp ESC    &kp T         &kp P        &kp C        &kp I
-                &le_m1     &le_m1        &le_m1       &le_m1       &kp W
+                &kp N1     &kp N1        &kp N2       &kp N2       &kp W
                 &kp TAB    &kp Q         &none        &none        &kp W
                 &kp D      &none         &none        &kp E        &kp E
                 &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 4 N4
