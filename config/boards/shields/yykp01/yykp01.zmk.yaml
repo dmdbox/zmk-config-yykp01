@@ -7,3 +7,4 @@ description: Bluetooth key pad
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - zmk studio
