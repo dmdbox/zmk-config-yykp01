@@ -107,101 +107,101 @@
 
         default_layer {
             bindings = <
-                &bootloader  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 3  &bt BT_CLR
-                &kp N1       &kp N2        &kp N3          &kp N4        &kp N5
-                &kp N6       &kp N7        &kp N8          &kp N9        &kp N0
-                &kp ENTER    &kp ENTER     &studio_unlock  &kp ENTER     &sys_reset
-                &kp ENTER    &kp ENTER     &kp ENTER       &sys_reset    &switch_layer 1 N1
+                &bt BT_CLR    &kp N7        &kp N8          &kp N9          &bootloader
+                &bt BT_SEL 0  &kp N4        &kp N5          &kp N6          &sys_reset
+                &bt BT_SEL 1  &kp N1        &kp N2          &kp N3          &none
+                &bt BT_SEL 2  &kp N0        &kp DOT         &kp N0          &none
+                &none         &none         &none           &studio_unlock  &switch_layer 1 N1
             >;
         };
 
         layout1 {
             bindings = <
-                &kp ESC    &kp R         &kp T        &kp C        &kp I
-                &kp N1     &kp N2        &kp N3       &kp N4       &kp N5
-                &kp TAB    &kp Q         &kp W        &kp E        &kp R
-                &kp TAB    &kp F3        &kp F2       &kp F1       &kp T
-                &kp LCTRL  &kp LALT      &kp LSHFT    &none        &switch_layer 2 N2
+                &kp ESC    &kp R         &kp T        &kp C          &kp I
+                &kp N1     &kp N2        &kp N3       &kp N4         &kp N5
+                &kp TAB    &kp Q         &kp W        &kp E          &kp R
+                &kp TAB    &kp F3        &kp F2       &kp F1         &kp T
+                &kp LCTRL  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 2 N2
             >;
         };
 
         layout2 {
             bindings = <
-                &kp ESC    &kp R         &kp T        &kp C        &kp I
-                &kp N1     &kp N1        &kp N1       &kp N1       &kp N2
-                &kp TAB    &kp SPACE     &kp W        &kp E        &kp W
-                &kp TAB    &none         &none        &kp T        &kp R
-                &kp Q      &kp LALT      &kp LSHFT    &none        &switch_layer 3 N3
+                &kp ESC    &kp R         &kp T        &kp C          &kp I
+                &kp N1     &kp N1        &kp N1       &kp N1         &kp N2
+                &kp TAB    &kp SPACE     &kp W        &kp E          &kp W
+                &kp TAB    &none         &none        &kp T          &kp R
+                &kp LSHFT  &kp LALT      &kp LCTRL    &studio_unlock &switch_layer 3 N3
             >;
         };
 
         layout3 {
             bindings = <
-                &kp ESC    &kp T         &kp P        &kp C        &kp I
-                &kp N1     &kp N1        &kp N2       &kp N2       &kp W
-                &kp TAB    &kp Q         &none        &none        &kp W
-                &kp D      &none         &none        &kp E        &kp E
-                &kp LSHFT  &kp E         &kp LALT     &none        &switch_layer 4 N4
+                &kp ESC    &kp T         &kp P        &kp C          &kp I
+                &kp N1     &kp N1        &kp N2       &kp N2         &kp W
+                &kp TAB    &kp Q         &none        &none          &kp W
+                &kp D      &none         &none        &kp E          &kp E
+                &kp LSHFT  &kp E         &kp LALT     &studio_unlock &switch_layer 4 N4
             >;
         };
 
         layout4 {
             bindings = <
-                &kp ESC    &kp N1        &none        &none        &kp TAB
-                &kp N1     &none         &kp W        &kp LCTRL    &kp R
-                &kp LSHFT  &kp A         &kp S        &kp D        &kp E
-                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
-                &kp SPACE  &kp LSHFT     &kp SPACE    &none        &switch_layer 5 N5
+                &kp ESC    &kp N1        &none        &none          &kp TAB
+                &kp N1     &none         &kp W        &kp LCTRL      &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D          &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
+                &kp SPACE  &kp LSHFT     &kp SPACE    &studio_unlock &switch_layer 5 N5
             >;
         };
 
         layout5 {
             bindings = <
-                &kp ESC    &kp E         &kp Z        &kp A        &kp I
-                &kp Q      &kp Q         &kp Q        &kp Q        &kp N4
-                &kp TAB    &kp N1        &none        &kp D        &kp Z
-                &kp LCTRL  &kp Z         &kp X        &kp N4       &kp N3
-                &kp SPACE  &kp LALT      &kp LSHFT    &none        &switch_layer 6 N6
+                &kp ESC    &kp E         &kp Z        &kp A          &kp I
+                &kp Q      &kp Q         &kp Q        &kp Q          &kp N4
+                &kp TAB    &kp N1        &none        &kp D          &kp Z
+                &kp LCTRL  &kp Z         &kp X        &kp N4         &kp N3
+                &kp SPACE  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 6 N6
             >;
         };
 
         layout6 {
             bindings = <
-                &kp ESC    &kp W         &none        &kp C        &kp I
-                &kp N1     &kp N2        &none        &kp N3       &kp N4
-                &kp TAB    &kp F4        &none        &kp F2       &kp F3
-                &none      &none         &none        &kp F2       &kp F1
-                &kp LCTRL  &kp LCTRL     &kp LSHFT    &none        &switch_layer 7 N7
+                &kp ESC    &kp W         &none        &kp C          &kp I
+                &kp N1     &kp N2        &none        &kp N3         &kp N4
+                &kp TAB    &kp F4        &none        &kp F2         &kp F3
+                &none      &none         &none        &kp F2         &kp F1
+                &kp LCTRL  &kp LCTRL     &kp LSHFT    &studio_unlock &switch_layer 7 N7
             >;
         };
 
         layout7 {
-            bindings = <
-                &kp ESC    &kp N2        &kp N3       &kp N4       &kp I
-                &kp M      &kp Z         &kp W        &kp C        &kp R
-                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
-                &kp LCTRL  &kp N7        &kp F5       &kp L        &kp N1
-                &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 8 N8
+            bindings = <                                        
+                &kp ESC    &kp N2        &kp N3       &kp N4         &kp I
+                &kp M      &kp Z         &kp W        &kp C          &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D          &kp F
+                &kp LCTRL  &kp N7        &kp F5       &kp L          &kp N1
+                &kp E      &kp SPACE     &kp Q        &studio_unlock &switch_layer 8 N8
             >;
         };
 
         layout8 {
             bindings = <
-                &kp ESC    &none         &none        &kp C        &kp I
-                &kp N1     &kp N2        &kp W        &kp N3       &kp N4
-                &none      &kp A         &kp S        &kp D        &kp E
-                &kp LSHFT  &kp Z         &kp X        &kp C        &kp F
-                &kp N5     &kp LALT      &kp N5       &none        &switch_layer 9 N9
+                &kp ESC    &none         &none        &kp C          &kp I
+                &kp N1     &kp N2        &kp W        &kp N3         &kp N4
+                &none      &kp A         &kp S        &kp D          &kp E
+                &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
+                &kp N5     &kp LALT      &kp N5       &studio_unlock &switch_layer 9 N9
             >;
         };
 
         layout9 {
             bindings = <
-                &kp ESC    &kp N1        &kp N2       &kp N3       &kp N4
-                &kp TAB    &kp Q         &kp W        &kp E        &kp R
-                &kp LSHFT  &kp A         &kp S        &kp D        &kp F
-                &kp LCTRL  &kp Z         &kp X        &kp C        &kp V
-                &kp LCTRL  &kp LALT      &kp SPACE    &none        &switch_layer 0 N0
+                &kp ESC    &kp N1        &kp N2       &kp N3         &kp N4
+                &kp TAB    &kp Q         &kp W        &kp E          &kp R
+                &kp LSHFT  &kp A         &kp S        &kp D          &kp F
+                &kp LCTRL  &kp Z         &kp X        &kp C          &kp V
+                &kp LCTRL  &kp LALT      &kp SPACE    &studio_unlock &switch_layer 0 N0
             >;
         };
     };
