@@ -25,7 +25,7 @@ disconnect_all: disconnect_all {
         <&macro_wait_time 250>,
         <&bt BT_DISC 3>,
         <&macro_wait_time 250>,
-        <&bt BT_DISC 4>
+        <&bt BT_DISC 4>;
     >;
 };
 
@@ -60,8 +60,8 @@ clear_all: clear_all {
                 <&macro_wait_time 500>,
                 <&bt BT_SEL 0>,
                 <&macro_wait_time 500>,
-                <&bt BT_CLR>;
-                <&macro_wait_time 500>,
+                <&bt BT_CLR>,
+                <&macro_wait_time 500>;
         };
 
 switch_layer0: switch_layer0 {
