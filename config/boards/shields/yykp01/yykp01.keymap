@@ -8,135 +8,157 @@
 
 / {
     macros {
-        layer_name_macro: layer_name_macro {
-            label = "LAYER_NAME_MACRO";
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>; // Number of parameters
-            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-        };
-        type_active_layer: type_active_layer {
-            label = "TYPE_ACTIVE_LAYER";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <
-              &kp LS(A)
-              &kp LS(L)
-              &macro_param_1to1
-              &kp HASH
-            >;
-        };
-        switch_layer: switch_layer {
-            label = "SWITCH_LAYER";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            wait-ms = <40>;
-            tap-ms = <40>;
-            bindings = <
-              &macro_param_1to1 &to MACRO_PLACEHOLDER
-            >;
-        };
 
 switch_layer0: switch_layer0 {
-    label = "SWITCH_LAYER0";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 0
-        &type_active_layer &kp N0
-    >;
-};
+        label = "SWITCH_LAYER0";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 0
+            &kp LS(A)
+            &kp LS(L)
+            &kp N0
+            &kp HASH
+        >;
+    };
 
-switch_layer1: switch_layer1 {
-    label = "SWITCH_LAYER1";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 1
-        &type_active_layer &kp N1
-    >;
-};
+    switch_layer1: switch_layer1 {
+        label = "SWITCH_LAYER1";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 1
+            &kp LS(A)
+            &kp LS(L)
+            &kp N1
+            &kp HASH
+        >;
+    };
 
-switch_layer2: switch_layer2 {
-    label = "SWITCH_LAYER2";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 2
-        &type_active_layer &kp N2
-    >;
-};
+    switch_layer2: switch_layer2 {
+        label = "SWITCH_LAYER2";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 2
+            &kp LS(A)
+            &kp LS(L)
+            &kp N2
+            &kp HASH
+        >;
+    };
 
-switch_layer3: switch_layer3 {
-    label = "SWITCH_LAYER3";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 3
-        &type_active_layer &kp N3
-    >;
-};
+    switch_layer3: switch_layer3 {
+        label = "SWITCH_LAYER3";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 3
+            &kp LS(A)
+            &kp LS(L)
+            &kp N3
+            &kp HASH
+        >;
+    };
 
-switch_layer4: switch_layer4 {
-    label = "SWITCH_LAYER4";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 4
-        &type_active_layer &kp N4
-    >;
-};
+    switch_layer4: switch_layer4 {
+        label = "SWITCH_LAYER4";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 4
+            &kp LS(A)
+            &kp LS(L)
+            &kp N4
+            &kp HASH
+        >;
+    };
 
-switch_layer5: switch_layer5 {
-    label = "SWITCH_LAYER5";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 5
-        &type_active_layer &kp N5
-    >;
-};
+    switch_layer5: switch_layer5 {
+        label = "SWITCH_LAYER5";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 5
+            &kp LS(A)
+            &kp LS(L)
+            &kp N5
+            &kp HASH
+        >;
+    };
 
-switch_layer6: switch_layer6 {
-    label = "SWITCH_LAYER6";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 6
-        &type_active_layer &kp N6
-    >;
-};
+    switch_layer6: switch_layer6 {
+        label = "SWITCH_LAYER6";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 6
+            &kp LS(A)
+            &kp LS(L)
+            &kp N6
+            &kp HASH
+        >;
+    };
 
-switch_layer7: switch_layer7 {
-    label = "SWITCH_LAYER7";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 7
-        &type_active_layer &kp N7
-    >;
-};
+    switch_layer7: switch_layer7 {
+        label = "SWITCH_LAYER7";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 7
+            &kp LS(A)
+            &kp LS(L)
+            &kp N7
+            &kp HASH
+        >;
+    };
 
-switch_layer8: switch_layer8 {
-    label = "SWITCH_LAYER8";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 8
-        &type_active_layer &kp N8
-    >;
-};
+    switch_layer8: switch_layer8 {
+        label = "SWITCH_LAYER8";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 8
+            &kp LS(A)
+            &kp LS(L)
+            &kp N8
+            &kp HASH
+        >;
+    };
 
-switch_layer9: switch_layer9 {
-    label = "SWITCH_LAYER9";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <
-        &switch_layer 9
-        &type_active_layer &kp N9
-    >;
-};
+    switch_layer9: switch_layer9 {
+        label = "SWITCH_LAYER9";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>;
+        tap-ms = <40>;
+        bindings = <
+            &to 9
+            &kp LS(A)
+            &kp LS(L)
+            &kp N9
+            &kp HASH
+        >;
+    };
+
     };
 
     keymap {
