@@ -24,7 +24,7 @@
               &macro_param_1to1 &to MACRO_PLACEHOLDER
               &kp LS(A)
               &kp LS(L)
-              &macro_param_2to1 &macro_tap
+              &macro_param_2to1 &kp MACRO_PLACEHOLDER
               &kp HASH
             >;
         };
@@ -111,7 +111,7 @@
                 &bt BT_SEL1   &kp N4        &kp N5          &kp N6          &sys_reset
                 &bt BT_SEL2   &kp N1        &kp N2          &kp N3          &bt BT_DISC
                 &bt BT_CLR    &kp N0        &kp DOT         &kp N0          &bt BT_CLR_ALL
-                &none         &none         &none           &studio_unlock  &switch_layer 1 N1
+                &none         &none         &none           &studio_unlock  &switch_layer 1 30
             >;
         };
 
@@ -121,7 +121,7 @@
                 &kp N1     &kp N2        &kp N3       &kp N4         &kp N5
                 &kp TAB    &kp Q         &kp W        &kp E          &kp R
                 &kp TAB    &kp F3        &kp F2       &kp F1         &kp T
-                &kp LCTRL  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 2 N2
+                &kp LCTRL  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 2 31
             >;
         };
 
@@ -131,7 +131,7 @@
                 &kp N1     &kp N1        &kp N1       &kp N1         &kp N2
                 &kp TAB    &kp SPACE     &kp W        &kp E          &kp W
                 &kp TAB    &none         &none        &kp T          &kp R
-                &kp LSHFT  &kp LALT      &kp LCTRL    &studio_unlock &switch_layer 3 N3
+                &kp LSHFT  &kp LALT      &kp LCTRL    &studio_unlock &switch_layer 3 32
             >;
         };
 
@@ -141,7 +141,7 @@
                 &kp N1     &kp N1        &kp N2       &kp N2         &kp W
                 &kp TAB    &kp Q         &none        &none          &kp W
                 &kp D      &none         &none        &kp E          &kp E
-                &kp LSHFT  &kp E         &kp LALT     &studio_unlock &switch_layer 4 N4
+                &kp LSHFT  &kp E         &kp LALT     &studio_unlock &switch_layer 4 33
             >;
         };
 
@@ -151,7 +151,7 @@
                 &kp N1     &none         &kp W        &kp LCTRL      &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp E
                 &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
-                &kp SPACE  &kp LSHFT     &kp SPACE    &studio_unlock &switch_layer 5 N5
+                &kp SPACE  &kp LSHFT     &kp SPACE    &studio_unlock &switch_layer 5 34
             >;
         };
 
@@ -161,7 +161,7 @@
                 &kp Q      &kp Q         &kp Q        &kp Q          &kp N4
                 &kp TAB    &kp N1        &none        &kp D          &kp Z
                 &kp LCTRL  &kp Z         &kp X        &kp N4         &kp N3
-                &kp SPACE  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 6 N6
+                &kp SPACE  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 6 35
             >;
         };
 
@@ -171,7 +171,7 @@
                 &kp N1     &kp N2        &none        &kp N3         &kp N4
                 &kp TAB    &kp F4        &none        &kp F2         &kp F3
                 &none      &none         &none        &kp F2         &kp F1
-                &kp LCTRL  &kp LCTRL     &kp LSHFT    &studio_unlock &switch_layer 7 N7
+                &kp LCTRL  &kp LCTRL     &kp LSHFT    &studio_unlock &switch_layer 7 36
             >;
         };
 
@@ -181,7 +181,7 @@
                 &kp M      &kp Z         &kp W        &kp C          &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp F
                 &kp LCTRL  &kp N7        &kp F5       &kp L          &kp N1
-                &kp E      &kp SPACE     &kp Q        &studio_unlock &switch_layer 8 N8
+                &kp E      &kp SPACE     &kp Q        &studio_unlock &switch_layer 8 37
             >;
         };
 
@@ -191,7 +191,7 @@
                 &kp N1     &kp N2        &kp W        &kp N3         &kp N4
                 &none      &kp A         &kp S        &kp D          &kp E
                 &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
-                &kp N5     &kp LALT      &kp N5       &studio_unlock &switch_layer 9 N9
+                &kp N5     &kp LALT      &kp N5       &studio_unlock &switch_layer 9 38
             >;
         };
 
@@ -201,7 +201,7 @@
                 &kp TAB    &kp Q         &kp W        &kp E          &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp F
                 &kp LCTRL  &kp Z         &kp X        &kp C          &kp V
-                &kp LCTRL  &kp LALT      &kp SPACE    &studio_unlock &switch_layer 0 N0
+                &kp LCTRL  &kp LALT      &kp SPACE    &studio_unlock &switch_layer 0 39
             >;
         };
     };
