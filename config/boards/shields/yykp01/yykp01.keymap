@@ -14,92 +14,129 @@
             #binding-cells = <1>; // Number of parameters
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER>;
         };
+        type_active_layer: type_active_layer {
+            label = "TYPE_ACTIVE_LAYER";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings = <
+              &kp LS(A)
+              &kp LS(L)
+              &macro_param_1to1
+              &kp HASH
+            >;
+        };
         switch_layer: switch_layer {
             label = "SWITCH_LAYER";
-            compatible = "zmk,behavior-macro-two-param";
-            #binding-cells = <2>; // Number of parameters
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
             wait-ms = <40>;
             tap-ms = <40>;
             bindings = <
               &macro_param_1to1 &to MACRO_PLACEHOLDER
-              &kp LS(A)
-              &kp LS(L)
-              &macro_param_2to1 &kp MACRO_PLACEHOLDER
-              &kp HASH
             >;
         };
-        activate_layer1: activate_layer1 {
-            label = "ACTIVATE_LAYER1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 1
-            >;  
-        };
-        activate_layer2: activate_layer2 {
-            label = "ACTIVATE_LAYER2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 2
-            >;  
-        };
-        activate_layer3: activate_layer3 {
-            label = "ACTIVATE_LAYER3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 3
-            >;  
-        };
-        activate_layer4: activate_layer4 {
-            label = "ACTIVATE_LAYER4";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 4
-            >;  
-        };
-        activate_layer5: activate_layer5 {
-            label = "ACTIVATE_LAYER5";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 5
-            >;  
-        };
-        activate_layer6: activate_layer6 {
-            label = "ACTIVATE_LAYER6";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 6
-            >;  
-        };
-        activate_layer7: activate_layer7 {
-            label = "ACTIVATE_LAYER7";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 7
-            >;  
-        };
-        activate_layer8: activate_layer8 {
-            label = "ACTIVATE_LAYER8";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 8
-            >;  
-        };
-        activate_layer9: activate_layer9 {
-            label = "ACTIVATE_LAYER9";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &to 9
-            >;  
-        };
+
+switch_layer0: switch_layer0 {
+    label = "SWITCH_LAYER0";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 0
+        &type_active_layer &kp N0
+    >;
+};
+
+switch_layer1: switch_layer1 {
+    label = "SWITCH_LAYER1";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 1
+        &type_active_layer &kp N1
+    >;
+};
+
+switch_layer2: switch_layer2 {
+    label = "SWITCH_LAYER2";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 2
+        &type_active_layer &kp N2
+    >;
+};
+
+switch_layer3: switch_layer3 {
+    label = "SWITCH_LAYER3";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 3
+        &type_active_layer &kp N3
+    >;
+};
+
+switch_layer4: switch_layer4 {
+    label = "SWITCH_LAYER4";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 4
+        &type_active_layer &kp N4
+    >;
+};
+
+switch_layer5: switch_layer5 {
+    label = "SWITCH_LAYER5";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 5
+        &type_active_layer &kp N5
+    >;
+};
+
+switch_layer6: switch_layer6 {
+    label = "SWITCH_LAYER6";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 6
+        &type_active_layer &kp N6
+    >;
+};
+
+switch_layer7: switch_layer7 {
+    label = "SWITCH_LAYER7";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 7
+        &type_active_layer &kp N7
+    >;
+};
+
+switch_layer8: switch_layer8 {
+    label = "SWITCH_LAYER8";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 8
+        &type_active_layer &kp N8
+    >;
+};
+
+switch_layer9: switch_layer9 {
+    label = "SWITCH_LAYER9";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <
+        &switch_layer 9
+        &type_active_layer &kp N9
+    >;
+};
     };
 
     keymap {
@@ -111,7 +148,7 @@
                 &bt BT_SEL 1  &kp N4        &kp N5          &kp N6          &sys_reset
                 &bt BT_SEL 2  &kp N1        &kp N2          &kp N3          &bt BT_DISC
                 &bt BT_CLR    &kp N0        &kp DOT         &kp N0          &bt BT_CLR_ALL
-                &none         &none         &none           &studio_unlock  &switch_layer 1 30
+                &none         &none         &none           &studio_unlock  &switch_layer1
             >;
         };
 
@@ -121,7 +158,7 @@
                 &kp N1     &kp N2        &kp N3       &kp N4         &kp N5
                 &kp TAB    &kp Q         &kp W        &kp E          &kp R
                 &kp TAB    &kp F3        &kp F2       &kp F1         &kp T
-                &kp LCTRL  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 2 31
+                &kp LCTRL  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer2
             >;
         };
 
@@ -131,7 +168,7 @@
                 &kp N1     &kp N1        &kp N1       &kp N1         &kp N2
                 &kp TAB    &kp SPACE     &kp W        &kp E          &kp W
                 &kp TAB    &none         &none        &kp T          &kp R
-                &kp LSHFT  &kp LALT      &kp LCTRL    &studio_unlock &switch_layer 3 32
+                &kp LSHFT  &kp LALT      &kp LCTRL    &studio_unlock &switch_layer3
             >;
         };
 
@@ -141,7 +178,7 @@
                 &kp N1     &kp N1        &kp N2       &kp N2         &kp W
                 &kp TAB    &kp Q         &none        &none          &kp W
                 &kp D      &none         &none        &kp E          &kp E
-                &kp LSHFT  &kp E         &kp LALT     &studio_unlock &switch_layer 4 33
+                &kp LSHFT  &kp E         &kp LALT     &studio_unlock &switch_layer4
             >;
         };
 
@@ -151,7 +188,7 @@
                 &kp N1     &none         &kp W        &kp LCTRL      &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp E
                 &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
-                &kp SPACE  &kp LSHFT     &kp SPACE    &studio_unlock &switch_layer 5 34
+                &kp SPACE  &kp LSHFT     &kp SPACE    &studio_unlock &switch_layer5
             >;
         };
 
@@ -161,7 +198,7 @@
                 &kp Q      &kp Q         &kp Q        &kp Q          &kp N4
                 &kp TAB    &kp N1        &none        &kp D          &kp Z
                 &kp LCTRL  &kp Z         &kp X        &kp N4         &kp N3
-                &kp SPACE  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer 6 35
+                &kp SPACE  &kp LALT      &kp LSHFT    &studio_unlock &switch_layer6
             >;
         };
 
@@ -171,7 +208,7 @@
                 &kp N1     &kp N2        &none        &kp N3         &kp N4
                 &kp TAB    &kp F4        &none        &kp F2         &kp F3
                 &none      &none         &none        &kp F2         &kp F1
-                &kp LCTRL  &kp LCTRL     &kp LSHFT    &studio_unlock &switch_layer 7 36
+                &kp LCTRL  &kp LCTRL     &kp LSHFT    &studio_unlock &switch_layer7
             >;
         };
 
@@ -181,7 +218,7 @@
                 &kp M      &kp Z         &kp W        &kp C          &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp F
                 &kp LCTRL  &kp N7        &kp F5       &kp L          &kp N1
-                &kp E      &kp SPACE     &kp Q        &studio_unlock &switch_layer 8 37
+                &kp E      &kp SPACE     &kp Q        &studio_unlock &switch_layer8
             >;
         };
 
@@ -191,7 +228,7 @@
                 &kp N1     &kp N2        &kp W        &kp N3         &kp N4
                 &none      &kp A         &kp S        &kp D          &kp E
                 &kp LSHFT  &kp Z         &kp X        &kp C          &kp F
-                &kp N5     &kp LALT      &kp N5       &studio_unlock &switch_layer 9 38
+                &kp N5     &kp LALT      &kp N5       &studio_unlock &switch_layer9
             >;
         };
 
@@ -201,7 +238,7 @@
                 &kp TAB    &kp Q         &kp W        &kp E          &kp R
                 &kp LSHFT  &kp A         &kp S        &kp D          &kp F
                 &kp LCTRL  &kp Z         &kp X        &kp C          &kp V
-                &kp LCTRL  &kp LALT      &kp SPACE    &studio_unlock &switch_layer 0 39
+                &kp LCTRL  &kp LALT      &kp SPACE    &studio_unlock &switch_layer0
             >;
         };
     };
