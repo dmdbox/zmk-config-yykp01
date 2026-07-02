@@ -9,6 +9,36 @@
 / {
     macros {
 
+disconnect_all: disconnect_all {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <200>;
+    tap-ms = <40>;
+    bindings = <
+        &bt BT_SEL 4
+        &bt BT_DISC 0
+        &bt BT_DISC 1
+        &bt BT_DISC 2
+        &bt BT_DISC 3
+    >;
+};
+
+clear_all: clear_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&bt BT_SEL 4>,
+                <&bt BT_CLR>,
+                <&bt BT_SEL 3>,
+                <&bt BT_CLR>,
+                <&bt BT_SEL 2>,
+                <&bt BT_CLR>,
+                <&bt BT_SEL 1>,
+                <&bt BT_CLR>,
+                <&bt BT_SEL 0>,
+                <&bt BT_CLR>;
+        };
+
 switch_layer0: switch_layer0 {
         label = "SWITCH_LAYER0";
         compatible = "zmk,behavior-macro";
@@ -168,8 +198,8 @@ switch_layer0: switch_layer0 {
             bindings = <
                 &bt BT_SEL 0  &kp N7        &kp N8          &kp N9          &bootloader
                 &bt BT_CLR    &kp N4        &kp N5          &kp N6          &sys_reset
-                &bt BT_DISC 0 &kp N1        &kp N2          &kp N3          &none
-                &none         &kp N0        &kp DOT         &kp N0          &none
+                &bt BT_DISC 0 &kp N1        &kp N2          &kp N3          &clear_all
+                &none         &kp N0        &kp DOT         &kp N0          &disconnect_all
                 &none         &none         &none           &studio_unlock  &switch_layer1
             >;
         };
