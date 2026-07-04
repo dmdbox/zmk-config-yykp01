@@ -190,6 +190,21 @@ switch_layer0: switch_layer0 {
         >;
     };
 
+    d2r_cta_buff: d2r_cta_buff {
+        label = "D2R_CTA_BUFF";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <40>; // Time between key presses
+        tap-ms = <40>;  // How long each key is held down
+        bindings = <
+            &kp w
+            &kp F6
+            &kp F7
+            &kp F8
+            &kp w
+        >;
+    };
+
     };
 
     keymap {
@@ -197,10 +212,10 @@ switch_layer0: switch_layer0 {
 
         default_layer {
             bindings = <
-                &studio_unlock    &bt BT_SEL 0        &bt BT_CLR          &bt BT_DISC 0          &bootloader
-                &none             &bt BT_SEL 1        &bt BT_CLR          &bt BT_DISC 1          &sys_reset
-                &none             &bt BT_SEL 2        &bt BT_CLR          &bt BT_DISC 2          &clear_all
-                &none             &kp N0              &kp DOT             &kp N0                 &disconnect_all
+                &kp ESC           &kp N1              &kp N2              &kp N3                 &bootloader
+                &studio_unlock    &bt BT_SEL 0        &bt BT_CLR          &bt BT_DISC 0          &sys_reset
+                &studio_unlock    &bt BT_SEL 1        &bt BT_CLR          &bt BT_DISC 1          &clear_all
+                &studio_unlock    &bt BT_SEL 2        &bt BT_CLR          &bt BT_DISC 2          &disconnect_all
                 &none             &none               &none               &studio_unlock         &switch_layer1
             >;
         };
