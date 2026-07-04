@@ -194,7 +194,7 @@ switch_layer0: switch_layer0 {
         label = "D2R_CTA_BUFF";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        wait-ms = <150>; // Time between key presses
+        wait-ms = <500>; // Time between key presses
         tap-ms = <100>;  // How long each key is held down
         bindings = <
             &kp W
